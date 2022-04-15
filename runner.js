@@ -1,0 +1,5 @@
+const canvasElem = document.getElementById('canvas')
+const overlayElem = document.getElementById('overlay')
+const boardController = new BoardController(100, 100)
+const canvasController = new CanvasController(boardController, canvasElem)
+const animator = new Animator(boardController, canvasController, overlayElem, 6)
